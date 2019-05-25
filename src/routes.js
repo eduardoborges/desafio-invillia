@@ -10,7 +10,7 @@ import SearchScreen from "./screens/search";
 export default () => (
   <Router>
     <Header />
-    <div style={{ margin: "40px 0" }}>
+    <div style={{ margin: "40px 15px" }}>
       <Switch>
         <Route component={SearchScreen} path="/" />
       </Switch>
