@@ -1,6 +1,9 @@
 import React from "react";
+import { connect } from "unistore/react";
 
-function SearchScreen() {
+import searchActions from "../../actions/searchActions";
+
+function SearchScreen({ PEOPLE = { data: [], isLoading: false }, actions }) {
   return (
     <div className="container">
       <h1 className="title">Search Screen</h1>
@@ -8,4 +11,7 @@ function SearchScreen() {
   );
 }
 
-export default SearchScreen;
+export default connect(
+  "PEOPLE",
+  searchActions
+)(SearchScreen);

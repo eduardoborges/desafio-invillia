@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function myComponent() {
+export default function Header() {
   return (
-    <nav class="navbar is-dark" role="navigation" aria-label="dropdown navigation">
+    <nav className="navbar is-dark" role="navigation" aria-label="dropdown navigation">
       <div className="container">
         <div className="navbar-brand">
           <div className="navbar-item">Appzinho do Edu</div>
