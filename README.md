@@ -1,28 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Desafio Invillia
 
-## Available Scripts
+Pois bem, esse é o resultado de um teste para o cargo de desenvolvedor pleno/senior na Invilia.
 
-In the project directory, you can run:
+O desafio era [este](https://gist.github.com/IgorMing/3b40a1ed93b51417ac057a7d001754ec) ;)
+
+## Resolução
+ - React (UI)
+ - [Unistore](https://github.com/developit/unistore) (DataFlow)
+ - [Bulma](https://github.com/jgthms/bulma) (UI)
+
+## Funcionalidades
+ - Infite scroll
+ - Busca rápida
+ - Offline working (yeah!)
+
+## Scripts
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Executa o código no modo desenvolvedor<br>
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador. (caso nao abra sozinho rs)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+A página será recarregada se você fizer edições. <br>
+Você também verá quaisquer erros de lint no console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o test runner no modo de relógio interativo. <br>
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Cria o aplicativo para produção na pasta `build`. <br>
+Ele agrupa corretamente o React no modo de produção e otimiza o build para obter o melhor desempenho.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A compilação é reduzida e os nomes dos arquivos incluem os hashes. <br>
+Seu aplicativo está pronto para ser implantado!
