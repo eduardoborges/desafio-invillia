@@ -3,8 +3,8 @@ import api from "./index";
 /**
  * Get all entries
  */
-const index = async () => {
-  console.log("Indexando bb");
+const index = () => {
+  return api.get("/people");
 };
 
 /**
