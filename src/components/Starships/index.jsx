@@ -1,7 +1,6 @@
 // @flow
 
 import React from "react";
-import axios from "axios";
 
 type StarShipType = {
   MGLT: String,
@@ -48,12 +47,12 @@ function StarShips({ data, handleClose }: StarshipProps) {
               <span>{item.passengers} passengers</span> <br />
               <span>{item.cargo_capacity} cargo capacity</span><br />
               <span>{item.consumables} consumables</span><br />
-              <span>{item.created} created</span><br />
-              <span>Crew{item.crew}</span><br />
+              <span>Crew {item.crew}</span><br />
               <span>{item.model} model</span><br />
               <span>{item.length} length</span><br />
               <span>Manufactured by {item.manufacturer}</span><br />
               <span>Class {item.starship_class}</span><br />
+              <span>Created on {new Date(item.created).getDay()}/{new Date(item.created).getMonth()}/{new Date(item.created).getFullYear()}</span><br />
               <hr />
             </div>
           ))}
