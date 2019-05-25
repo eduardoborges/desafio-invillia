@@ -1,6 +1,7 @@
 import createStore from "unistore";
+import devtools from "unistore/devtools";
 
-let store = createStore({
+let initialState = {
   PEOPLE: {
     isLoading: false,
     count: 0,
@@ -13,7 +14,12 @@ let store = createStore({
     page: 0,
     data: []
   }
-});
+};
+
+let store =
+  process.env.NODE_ENV === "production"
+    ? createStore(initialState)
+    : devtools(createStore(initialState));
 
 store.subscribe(state => console.log(state));
 
