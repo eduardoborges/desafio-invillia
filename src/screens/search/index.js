@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { connect } from "unistore/react";
 import { searchInListByField } from "../../utils";
 
@@ -53,7 +53,7 @@ class SearchScreen extends React.Component {
 
         <div className="peoples columns is-multiline">
           {searchInListByField(PEOPLE.data, "name", filter).map((item, index) => (
-            <div className="column is-one-quarter">
+            <div className="column is-one-quarter" key={item.name}>
               <People {...item} />
             </div>
           ))}
