@@ -1,12 +1,12 @@
 import React from "react";
 import { hot } from "react-hot-loader";
 
-import { Hello } from "./components";
+import RootRoutes from "./routes";
 
 function App() {
   return (
-    <div className="container">
-      <Hello />
+    <div className="root">
+      <RootRoutes />
     </div>
   );
 }
