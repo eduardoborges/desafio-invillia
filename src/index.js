@@ -7,4 +7,4 @@ import "bulma/css/bulma.css";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
-sw.unregister();
+sw.register();

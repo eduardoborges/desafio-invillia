@@ -37,7 +37,7 @@ class SearchScreen extends React.Component {
       <div className="container">
         <div className="columns">
           <div className="column">
-            <h1 className="title">Search Screen</h1>
+            <h1 className="title">People list {!navigator.onLine && "[Working Offline]"}</h1>
           </div>
           <div className="column">
             <input
