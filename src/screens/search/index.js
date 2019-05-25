@@ -24,7 +24,7 @@ class SearchScreen extends React.Component {
 
   handleScroll = () => {
     const { offsetHeight, scrollTop } = document.documentElement;
-    const offset = 100; // um pouquinho antes né bb
+    const offset = 300; // um pouquinho antes né bb
     if (window.innerHeight + scrollTop <= offsetHeight - offset) return;
     this.props.getPeople();
   };
