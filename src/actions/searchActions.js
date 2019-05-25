@@ -11,11 +11,11 @@ const actions = store => ({
 
     await store.setState({ PEOPLE: { ...PEOPLE, isLoading: true } });
 
-    const { data } = await index();
+    const { data } = await index(PEOPLE.page);
 
     return {
       PEOPLE: {
-        data: data.results,
+        data: [...PEOPLE.data, ...data.results],
         page: PEOPLE.page + 1,
         count: data.count,
         isLoading: false
