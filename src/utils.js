@@ -3,10 +3,9 @@
 //! Funcoeszinhas que podem ajudar, bb
 
 
-function searchInListByField(arr = [], field = "name", searchFor = "") {
+function searchInListByField(arr = [], field, searchFor = "") {
   return arr.filter(item => {
-    field = item[field] ? item[field] : "";
-    return field.search(new RegExp(searchFor, "i")) === -1 ? false : item;
+    return item[field].search(new RegExp(searchFor, "i")) === -1 ? false : item;
   });
 };
 
