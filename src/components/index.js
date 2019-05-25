@@ -1,3 +1,3 @@
 import Hello from "./Hello";
-
-export { Hello };
+import Header from "./Header";
+export { Hello, Header };
