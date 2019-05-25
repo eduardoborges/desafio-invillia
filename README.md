@@ -2,7 +2,7 @@
 
 Pois bem, esse é o resultado de um teste para o cargo de desenvolvedor pleno/senior na Invilia.
 
-O desafio era [este](https://gist.github.com/IgorMing/3b40a1ed93b51417ac057a7d001754ec) ;)
+O desafio é [este](https://gist.github.com/IgorMing/3b40a1ed93b51417ac057a7d001754ec) ;)
 
 ## Resolução
  - React (UI)
@@ -10,7 +10,7 @@ O desafio era [este](https://gist.github.com/IgorMing/3b40a1ed93b51417ac057a7d00
  - [Bulma](https://github.com/jgthms/bulma) (UI)
 
 ## Funcionalidades
- - Infite scroll
+ - Infinite scroll
  - Busca rápida
  - Offline working (yeah!)
 
