@@ -23,8 +23,34 @@ type PeopleProps = {
 
 export default function People(props: PeopleProps) {
   return (
-    <div className="people">
-      <h1 className="title">{props.name}</h1>
-    </div>
+    <a href={props.url}>
+      <div className="box">
+        <article className="media">
+          <div className="media-left">
+            <figure className="image is-64x64 ">
+              <img
+                className="is-rounded"
+                src="https://bulma.io/images/placeholders/128x128.png"
+                alt="Image"
+              />
+            </figure>
+          </div>
+          <div className="media-content">
+            <div className="content">
+              <p>
+                <strong>{props.name} </strong>
+                <small>
+                  {props.height}cm • {props.mass}kgs • {props.eye_color} eyes • {props.skin_color}{" "}
+                  skin{" "}
+                </small>
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet
+                massa fringilla egestas. Nullam condimentum luctus turpis.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </a>
   );
 }
