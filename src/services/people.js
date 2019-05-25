@@ -3,8 +3,9 @@ import api from "./index";
 /**
  * Get all entries
  */
-const index = () => {
-  return api.get("/people");
+const index = (page = 0) => {
+  page = page === 0 ? 1 : page;
+  return api.get("/people?page=" + page);
 };
 
 /**
